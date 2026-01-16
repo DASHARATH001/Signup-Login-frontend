@@ -27,7 +27,7 @@ const Signup = () => {
       return toastError("Name , Email & Password is required");
     }
     try {
-      const url = "https://signup-login-backend-beta.vercel.app";
+      const url = "https://signup-login-backend-beta.vercel.app/auth/signup";
       const res = await fetch(url, {
         method: "POST",
         headers: {

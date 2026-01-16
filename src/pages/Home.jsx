@@ -16,7 +16,7 @@ const Home = () => {
     localStorage.removeItem("name");
     toastSuccess("User Loggedout");
     setTimeout(() => {
-      navigate("/Login");
+      navigate("/login");
     }, 1000);
   };
 

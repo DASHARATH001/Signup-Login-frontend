@@ -19,7 +19,7 @@ const App = () => {
       <RefreshHandler setIsAuthenticated={setIsAuthenticated} />
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
-        <Route path="/Home" element={<ParivateRoute element={<Home />} />} />
+        <Route path="/home" element={<ParivateRoute element={<Home />} />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Routes>

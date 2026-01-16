@@ -27,7 +27,7 @@ const Login = () => {
       return toastError(" Email & Password is required");
     }
     try {
-      const url = "https://signup-login-backend-beta.vercel.app";
+      const url = "https://signup-login-backend-beta.vercel.app/auth/login";
       const res = await fetch(url, {
         method: "POST",
         headers: {
@@ -42,7 +42,7 @@ const Login = () => {
         localStorage.setItem('token', jwtToken);
         localStorage.setItem('loggedInUser', name)
         setTimeout(() => {
-          navigate("/Home");
+          navigate("/home");
         }, 1000);
       } else if (error) {
         const details = error?.details[0].message;
